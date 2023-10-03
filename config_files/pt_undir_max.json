@@ -1,0 +1,51 @@
+{
+    "base" : {
+        "seed" : 42,
+        "load_model_outputs_from_dir" : false,
+        "load_diagrams_from_dir" : false,
+        "experiment_loaddir_name" : ""
+    },
+    "model" : {
+        "load_from_dir" : false
+    },
+    "training" : {
+        "do_train" : false
+    },
+    "dataset" : {
+        "id_dataset" : {
+            "name": "news-category",
+            "train_size": 30000,
+            "val_size" : 1000,
+            "test_size": 1000,
+            "labels_subset": ["POLITICS", "ENTERTAINMENT"]
+        },
+        "ood_datasets" : [
+            {
+                "name": "imdb",
+                "train_size": 0,
+                "val_size" : 0,
+                "test_size": 1000
+            },
+            {
+                "name": "cnn_dailymail",
+                "train_size": 0,
+                "val_size" : 0,
+                "test_size": 1000
+            },
+            {
+                "name": "news-category",
+                "train_size": 0,
+                "val_size" : 0,
+                "test_size": 1000,
+                "labels_subset": ["BUSINESS"]
+            }
+        ]
+    },
+    "tda" : {
+        "do_id_tda" : true,
+        "graph_type" : "undirected",
+        "symmetry" : "max",
+        "homology_dims" : [0, 1, 2, 3],
+        "amplitude_metrics" : ["bottleneck", "wasserstein"]
+    }
+}
