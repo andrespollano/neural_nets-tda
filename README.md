@@ -60,6 +60,7 @@ The JSON file should contain the custom experiment configurations with the follo
  The values in configs.py can be updated using a json file in the 'config_files' directory with the following command:
  'python run_tda.py --config= <confif_filename>.json'
 
+
  ## Citation
 TODO: Add citations once paper is uploaded
 
