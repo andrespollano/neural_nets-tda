@@ -18,7 +18,7 @@ Clone this directory, and set up two new directories:
 Note: The locations of both directories should be specified in `config.py`. If not, they will be auto-created in the parent directory of the repository root.
 
 Both directories can be located anywhere but should be specified in `config.py`. If not specified, the directories will be created one directory above the root.
-if you wish to use the fine-tuned model used in the paper, download and extract the contents from Figshare <TODO: Insert link> to the  `fine_tuned_models` subdirectory.
+if you wish to use the fine-tuned model used in the paper, download and extract the contents from Figshare <https://figshare.com/s/89d2329654fd7bfedbb2> to the  `fine_tuned_models` subdirectory.
 
 ## Running experiments
 
